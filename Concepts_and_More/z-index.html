@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        /* position should be absolute while using z-index */
+     div#layer1{
+         position: absolute;
+         top: 8px;
+         left: 8px;
+         width: 350px;
+         height: 160px;
+         background-color: blueviolet;
+         padding: 5px;
+         border-color: royalblue;
+         border: 1px;
+         border-style: solid;
+         z-index:1;
+     }
+     div#layer2{
+         position: absolute;
+         top: 25px;
+         left: 25px;
+         width: 450px;
+         height: 180px;
+         background-color: rgb(43, 226, 134);
+         padding: 5px;
+         border-color: rgb(180, 65, 225);
+         border: 1px;
+         border-style: solid;
+         z-index: 2;
+     }
+     div#layer3{
+         position: absolute;
+         top: 40px;
+         left: 40px;
+         width: 550px;
+         height: 200px;
+         background-color: rgb(226, 147, 43);
+         padding: 5px;
+         border-color: rgb(225, 65, 100);
+         border: 1px;
+         border-style: solid;
+         z-index: 3;
+     }
+     
+    </style>
+</head>
+
+<!-- 
+    LAYERS:
+    CSS gives you an opportunity to create layers of various divisions. The CSS 
+layers refer to applying the z-index property to elements that overlap with each 
+other.
+
+The z-index property is used along with the position property to create an effect 
+of layers. You can specify which element should come on top and which element 
+should come at bottom.
+
+A z-index property can help you to create more complex webpage layouts -->
+<body>
+    <div id="layer1">
+        <h1>Z-Index examples,we can change the position of images etc...</h1>
+    </div>
+    <div id="layer2">
+        <h1>Z-Index examples,we can change the position of images etc...</h1>
+    </div>
+    <div id="layer3">
+        <h1>Z-Index examples,we can change the position of images etc...</h1>
+    </div>
+</body>
+
+</html>

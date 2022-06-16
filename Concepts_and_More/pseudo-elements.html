@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO ELEMENTS</title>
+    <style>
+        /*1. The :first-line pseudo-element
+The following example demonstrates how to use the :first-line element to add 
+special effects to the first line of elements in a document. */
+        p:first-line {
+            text-decoration: underline;
+            font-size: 1.5rem;
+        }
+
+        p.noline:first-line {
+            text-decoration: none;
+
+        }
+
+
+        /* 2.
+        The :first-letter pseudo-element
+The following example demonstrates how to use the :first-letter element to add 
+special effect to the first letter of elements in the document. */
+        h4:first-letter {
+            font-size: 5em;
+            color: red;
+        }
+
+        h4.normal:first-letter {
+            font-size: 10px;
+        }
+
+
+        /* 3.
+        The :before pseudo-element
+The following example demonstrates how to use :before element to add some 
+content before any element.  */
+div:before
+{
+    content: url(images/images.png);
+    /* content: " SALMAN"; */
+    
+}
+
+
+/*  4.
+    The :after pseudo-element
+The following example demonstrates how to use :after element to add some 
+content after any element. */
+h5:after{
+    content: url(images/ges\ \(1\).png);
+    /* content: " SALMAN"; */
+    
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        CSS pseudo-elements are used to add special effects to some selectors. You do 
+not need to use JavaScript or any other script to use those effects.
+
+ A simple syntax of pseudo-element is as follows:
+selector:pseudo-element {property: value}
+
+CSS classes can also be used with the pseudo-elements:
+selector.class:pseudo-element {property: value}
+
+The most commonly used pseudo-elements are as follows:
+
+1.
+:first-line
+ Use this element to add special styles to the first line of the text 
+in a selector.
+
+2.
+:first-letter
+ Use this element to add special style to the first letter of the text 
+in a selector.
+
+3.
+:before
+ Use this element to insert some content before an element.
+4.
+:after 
+Use this element to insert some content after an element
+     -->
+
+
+    <!--1. The :first-line pseudo-element
+     The following example demonstrates how to use the :first-line element to add 
+     special effects to the first line of elements in a document.  -->
+    <p class="noline"> This line would not have any underline because this belongs to noline class.</p>
+    <p>The first line of this paragraph will be underlined
+        as defined in the CSS rule above. Rest of the lines in this
+        paragraph will remain normal. This example shows how to use
+        :first-line pseduo element to give effect to the first line
+        of any HTML element.</p>
+
+
+
+
+    <!-- 2. 
+        The :first-letter pseudo-element
+The following example demonstrates how to use the :first-letter element to add 
+special effect to the first letter of elements in the document.-->
+    <h4 class="normal"> First character of this paragraph will
+        be normal and will have font size 10 px;</h4>
+    <h4>The first character of this paragraph will be 5em big
+        and in red color as defined in the CSS rule above. Rest of the
+        characters in this paragraph will remain normal. This example
+        shows how to use :first-letter pseduo element to give effect to
+        the first characters of any HTML element.</h4>
+
+
+
+
+        <!-- 3.
+        The :before pseudo-element
+The following example demonstrates how to use :before element to add some 
+content before any element. -->
+
+<div> This line will be preceded by a image.</div>
+<div> This line will be preceded by a image.</div>
+<div> This line will be preceded by a image.</div>
+
+
+
+<!-- 4.
+    The :after pseudo-element
+The following example demonstrates how to use :after element to add some 
+content after any element.
+ -->
+ <br><br>
+ <h5> This line will be succeeded by a image</h5>
+ <h5> This line will be succeeded by a image</h5>
+ <h5> This line will be succeeded by a image</h5>
+ 
+</body>
+
+</html>

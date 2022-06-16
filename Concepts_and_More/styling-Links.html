@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links</title>
+    <style>
+        div {
+            font-size: 2rem;
+            background-color: grey;
+            border-radius: .7rem;
+
+        }
+
+        div a {
+            text-decoration: none;
+            padding: 30px;
+
+        }
+
+
+        a:link {
+            color: rgb(0, 255, 255);
+        }
+
+        a:visited {
+            color: rgb(4, 255, 37);
+
+        }
+
+        a:hover {
+            color: rgb(250, 1, 84);
+        }
+
+        a:active {
+            color: green;
+            background-color: peru;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  LINKS:
+   This chapter teaches you how to set different properties of a hyper link using 
+CSS. You can set the following properties of a hyperlink:
+We will revisit the same properties when we will discuss Pseudo-Classes of CSS.
+1. The :link signifies unvisited hyperlinks.
+2. The :visited signifies visited hyperlinks.
+3. The :hover signifies an element that currently has the user's mouse 
+pointer hovering over it.
+4. The :active signifies an element on which the user is currently clicking.
+
+
+
+Usually, all these properties are kept in the header part of the HTML document.
+Remember a:hover MUST come after a:link and a:visited in the CSS definition in 
+order to be effective. Also, a:active MUST come after a:hover in the CSS 
+definition as follows
+-->
+
+
+    <!--
+            While defining pseudo-classes in a <style>...
+    </style> block, the following points
+    should be noted:
+    1. a:hover MUST come after a:link and a:visited in the CSS definition in
+    order to be effective.
+    2. a:active MUST come after a:hover in the CSS definition in order to be
+    effective.
+    3. Pseudo-class names are not case-sensitive.
+    4. Pseudo-classes are different from CSS classes, but they can be combined.-->
+
+    <div>
+        <a href="#">link</a>
+        <a href="#">visited</a>
+        <a href="#">hover</a>
+        <a href="#">active</a>
+        <a href="#" class="focus">focus</a>
+
+
+
+    </div>
+
+</body>
+
+</html>

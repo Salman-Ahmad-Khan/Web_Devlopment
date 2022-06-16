@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File</title>
+    
+    <style>
+        html
+        {
+            font-size: 62.5%;
+        }
+        body
+        {
+            background: url(images/mercedes-benz-vision-avtr-front-side-214.jpg);
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            
+        }
+        #butn
+        {
+            
+           padding: 1rem;
+           border-radius: .5rem;
+           margin-left: 10rem;
+           
+           font-weight: bolder;
+           
+           background: -webkit-linear-gradient(20deg,rgb(0, 255, 76),rgb(255, 0, 0));
+           background-clip:text ;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           
+            
+        }
+        #butn:hover
+        {
+            cursor: pointer;
+            background: -webkit-linear-gradient(10deg,red,rgb(9, 26, 255));
+           background-clip:text ;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+            border-radius: 100%;
+            
+        }
+        .txt
+         {
+             padding: 3rem;
+             color: teal;
+            
+           background: -webkit-linear-gradient(20deg,red,blue);
+           background-clip:text ;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           
+            
+            
+        }
+        img
+        {
+            /* position: relative; */
+            width: 35%;
+            height: 30%;
+            float: left;
+        }
+        .line
+        {
+            color: white;
+            padding: 2rem;
+        }
+        @media all and (max-width:519px) and (min-width:200px) {
+    html {
+        font-size: 1rem;
+
+
+
+
+    }
+}
+
+/* @media all and (max-width:699px) and (min-width:520px) {
+    html {
+        font-size: .8rem;
+
+
+
+
+    }
+}  */
+
+/* @media (max-width:768px) {
+    html {
+       font-size: 1rem;
+    }
+ } */
+
+/* 
+
+  @media all {
+   html {
+      font-size: 1rem;
+
+
+
+
+   } */
+}
+        
+    </style>
+</head>
+<body>
+    <div class="txt">
+        <p>Lorem ipsum dolor sit amet <h1 style="font-size: 3.5rem;">consectetur adipisicing elit. Libero praesentium repudiandae</h1> minus hic rerum commodi illum! Esse iusto cumque dolorem.</p>
+    </div>
+   
+
+    <p class="line">To download a random image, click here...</p>
+   <div class="download-file">
+    <a href="images/istockphoto-1173280131-170667a.jpg" download="" >
+        
+        <input type="button" value="Download" id="butn">
+    </a>
+
+   </div>
+
+  
+       
+            <!-- <input type="file" id="file"> -->
+            
+            <!-- <input type="color" id="color" value="#227256">
+            -->
+
+       
+    
+</body>
+</html>

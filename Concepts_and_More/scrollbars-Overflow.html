@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCROLLBARS</title>
+
+    <style type="text/css">
+        .visible {
+            /* display: block; */
+            border: 1px solid green;
+            padding: 5px;
+            width: 100px;
+            height: 100px;
+            overflow: visible;
+
+        }
+
+        .scroll {
+            /* display: block; */
+            border: 1px solid red;
+            padding: 5px;
+            margin-top: 5px;
+            width: 600px;
+            height: 200px;
+            overflow: scroll;
+            float: right;
+        }
+
+        .auto {
+            display: block;
+            border: 1px solid red;
+            padding: 5px;
+            margin-top: 5px;
+            width: 600px;
+            height: 50px;
+            overflow: auto;
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--SCROLLBARS:
+     There may be a case when an element's content might be larger than the 
+amount of space allocated to it. For example, the given width and height 
+properties do not allow enough room to accommodate the content of the 
+element.
+CSS provides a property called overflow, which tells the browser what to do if the 
+box's contents is larger than the box itself. This property can take one of the 
+following values:
+
+
+1.visible:
+ Allows the content to overflow the borders of its containing element.
+2.hidden:
+ The content of the nested element is simply cut off at the border of 
+the containing element and no scrollbars is visible.
+3.scroll:
+ The size of the containing element does not change, but the scrollbars 
+are added to allow the user to scroll to see the content.
+4.auto:
+ The purpose is the same as scroll, but the scrollbar will be shown only 
+if the content does overflow.
+ -->
+    <p>Example of overflow:visible value:</p>
+    <div class="visible">
+        I am going to keep lot of content here just to show
+        you how overflow works if there is an overflow in
+        an element box.
+    </div>
+<br> <br><br> <br>
+    <p>Example of scroll value:</p>
+    <div class="scroll">
+        I am going to keep lot of content here just to show
+        you how scrollbars works if there is an overflow in
+        an element box. <br> This provides your horizontal as well
+        as vertical scrollbars. <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem architecto consectetur dolor quia atque corrupti sunt officia ipsam rerum iusto cupiditate voluptates, esse in. <br><br> Cum officiis blanditiis ut possimus sequi laborum eos natus debitis. Animi facere non ducimus accusantium amet blanditiis iure cupiditate, quaerat suscipit architecto officiis nam adipisci consequuntur ab voluptatibus quia! Quas necessitatibus cumque expedita cupiditate ducimus. In ea est perferendis cupiditate temporibus? Voluptatibus, fugiat blanditiis.<br><br> Id placeat possimus harum? Vel sit doloremque earum obcaecati officiis placeat eos beatae harum error, soluta unde quam architecto. Numquam mollitia in voluptates ex. Perferendis accusamus ipsum delectus corporis. Dicta incidunt eos deleniti illo modi ad, perspiciatis debitis impedit sapiente, blanditiis, magni fugiat repellendus ab quas libero mollitia error aperiam odio? Quo odio temporibus quae sequi quos excepturi. Amet distinctio odit illo<br><br> quo expedita minus ut earum fuga eius vel voluptatem magnam assumenda quia voluptate laudantium sequi fugit temporibus dolore repellat quibusdam, eos quisquam. Ratione dolor quasi voluptatibus. Cumque voluptates ducimus provident asperiores impedit ipsum aliquid eligendi magni quia similique repellendus dicta, id, quae placeat ipsam fuga. Ullam non optio in quo voluptate eius quis assumenda, fugiat necessitatibus fuga? Ex totam facere libero pariatur itaque accusamus debitis velit possimus<br><br> molestiae sint, eum provident ipsa beatae architecto delectus, laborum eveniet officiis nostrum sapiente amet reprehenderit nulla aspernatur! Ipsam necessitatibus dicta iure nihil consectetur, error nemo ad adipisci obcaecati, ea earum architecto in quam cumque optio unde harum accusantium praesentium perspiciatis reprehenderit? <br><br>Voluptas velit quod, blanditiis facilis deserunt asperiores nam dolorum molestiae sit, cum dolorem eos suscipit similique? Optio a inventore voluptatum minima, iste ab, magnam id est laudantium asperiores doloremque dolorem sed odit. Magnam quos, sunt nesciunt quis expedita et, voluptatum optio id provident, voluptate labore laudantium! Sed magnam dolorum <br><br>exercitationem reiciendis explicabo dolores deserunt, eius necessitatibus voluptas inventore culpa ratione fuga harum recusandae omnis. Exercitationem quidem ratione perferendis ea perspiciatis, fugiat inventore asperiores? Consectetur ad, cum mollitia repellendus non a praesentium atque aliquid quos nam ab similique excepturi eaque doloribus ratione fugiat maxime iusto voluptates quidem delectus nulla,<br><br> fuga doloremque. Vel quis velit quo, autem fugiat totam nemo similique facere quia placeat quasi, ullam tempore, maxime architecto ipsa voluptatibus quisquam explicabo eligendi necessitatibus? Eius similique minus, possimus quis iste asperiores quam, neque libero nihil consectetur reiciendis! Nemo saepe assumenda <br><br>a qui. Doloribus sed accusantium quam neque vero nesciunt totam quasi animi quod facilis consectetur nobis est, repellendus delectus minima recusandae praesentium hic officia! Blanditiis incidunt voluptatibus ratione quidem distinctio quia fuga alias porro quis voluptatem nulla suscipit aut minus necessitatibus omnis assumenda ab veniam minima earum itaque, <br><br>optio doloremque possimus quaerat quisquam. Aut ducimus suscipit laborum cum, saepe eum, laudantium culpa reiciendis non nam nulla praesentium. Eaque quidem expedita accusantium soluta necessitatibus non,<br><br> aliquam debitis aliquid esse rerum corrupti magnam mollitia aperiam repellat sapiente provident in, error labore ipsum? Doloribus, minima iste! Ratione fuga, quod quidem, magni dignissimos doloremque mollitia repellendus quia corporis, aliquid rerum quis neque! Sapiente ad, ducimus, accusamus dicta porro illo, quas delectus neque ut cumque at perspiciatis.
+    </div>
+    <br />
+    <br><br><br> <br><br><br><br><br><br><br><br>
+    <p>Example of auto value:</p>
+    <div class="auto">
+        I am going to keep lot of content here just to show
+        you how scrollbars works if there is an overflow in
+        an element box. This provides your horizontal as well
+        as vertical scrollbars.
+    </div>
+
+</body>
+
+</html>

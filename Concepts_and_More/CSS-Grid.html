@@ -1,0 +1,109 @@
+<!-- CSS Grid Layout:
+CSS Grid Layout is a two-dimensional layout system for the web. It lets you lay content out in rows and columns, and has many features that make building complex layouts straightforward.
+
+What is grid layout?
+A grid is a collection of horizontal and vertical lines creating a pattern against which we can line up our design elements. They help us to create designs where elements don't jump around or change width as we move from page to page, providing greater consistency on our websites.
+
+FlexBox VS Grid Layout:
+
+--Flexbox is one-dimensional
+--CSS Grid is two-dimensional
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+             /* no of columns */
+            /* grid-template-columns: 1fr 1fr 2fr 1fr 1fr ; */
+            /* grid-template-columns: 1fr 2fr 1fr  ; */
+
+            /* repeat(3,1fr)-repeats 1fr 3 times */
+            /* grid-template-columns: repeat(3,1fr)  ; */
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr))  ;
+            grid-gap: 20px;
+            /* grid-column-gap: 25px; */
+            /* grid-row-gap: 25px; */
+            
+                  /*no of rows*/
+            /* grid-template-rows: 200px 200px 200px; */
+            grid-auto-rows: minmax(100px,auto);
+
+            /* grid-auto-rows: 50px; */
+            grid-auto-columns: minmax(50px,auto);
+
+            /* column-gap: 60px; */
+            /* row-gap: 80px; */
+           
+        }
+        .items{
+            background-color:coral;
+            border: 3px rgb(5, 63, 255) solid;
+            border-radius: 4px;
+            
+        }
+        #item-1{
+            grid-row-start:1 ;
+            grid-row-end: 3;
+        }
+        #item-2{
+            /* grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3; */
+
+            grid-row-start: 2;
+            grid-row-end:3 ;
+
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        
+        #item-5{
+            grid-column-start: 2;
+            grid-column-end: -2;
+        }
+
+        .item-1-container{
+            display: grid;
+            grid-template-rows: repeat(5,ifr);
+            row-gap: 20px;
+        }
+        #item-a{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .nested-item{
+            border: 2px red solid;
+            border-radius: 3px;
+            background-color: teal;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+     <!-- div.items{Box $}*5 -->
+    <div class="container">
+       <!-- nesting of grids
+            div.nested-item{Grid in a grid $}*5
+         -->
+        <div class="items item-1-container" id="item-1">
+            
+            <div class="nested-item" id="item-a">Grid in a grid 1</div>
+            <div class="nested-item">Grid in a grid 2</div>
+            <div class="nested-item">Grid in a grid 3</div>
+            <div class="nested-item">Grid in a grid 4</div>
+            <div class="nested-item">Grid in a grid 5</div>
+        </div>
+        <div class="items" id="item-2">Grid Box 2  </div>
+        <div class="items">Grid Box 3</div>
+        <div class="items">Grid Box 4</div>
+        <div class="items" id="item-5">Grid Box 5</div>
+    </div>
+</body>
+</html>

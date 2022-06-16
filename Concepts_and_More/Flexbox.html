@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display:Flexbox</title>
+    <!-- 
+
+WHAT IS FLEXBOX?
+
+CSS flexbox layout allows you to easily format HTML Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space. It makes responsive design easier.
+
+Why is FlexBox?
+• Vertically centering a block of content inside its parent.
+• Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available.
+• Making all columns in a multiple-column layout adopt the same height even if they contain a different amount of content.
+
+
+Terminologies:
+• main-axis: The main axis of a flex container is the primary axis along which flex items are laid out. The direction is based on the flex-direction property.
+
+• main-start | main-end: The flex items are placed within the container starting on the main-start side and going
+toward the main-end side.
+
+• main size: The width or height of a flex container or flex item, whichever is in the main dimension, is that box's
+main size. Its main size property is thus either its width or height property, whichever is in the main dimension.
+
+• cross axis: The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis
+direction.
+
+• cross-start | cross-end: Flex lines are filled with items and placed into the container starting on the cross-start
+side of the flex container and going toward the cross-end side.
+
+• cross size: The width or height of a flex item, whichever is in the cross dimension, is the item's cross size. The
+cross size property is whichever of 'width' or 'height' that is in the cross dimension.
+-->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.8rem;
+            padding: 1rem;
+            line-height: 1.5;
+        }
+        .flex-container{
+            display: flex;
+            width: 100%;
+            height: 500px;
+            flex-wrap: wrap;
+              /*change the size of window to see the effect*/
+            /* align-content:stretch; */
+            /* align-content:stretch; */
+            /* align-content:space-between; */
+            /* justify-content: space-evenly; */
+            
+            justify-content:space-between;
+
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+        }
+
+        .flex-item{
+            width:70px ;
+            height: 70px;
+            background-color: lightskyblue;
+            border: 2px solid darkblue;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+        #flex-item-1{
+            background-color: cadetblue;
+            /* order: 10; */
+            /* flex-basis: 200px; */
+            /* flex-grow: 2; */
+        }
+        #flex-item-2{
+            background-color: rgb(41, 145, 15);
+        }
+        #flex-item-3{
+            background-color: rgb(212, 26, 98);
+        }
+        #flex-item-4{
+            /* align-self: flex-end; */
+            background-color: rgb(23, 32, 165);
+        }
+        #flex-item-5{
+            /* order: 7; */
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+            background-color: rgb(173, 175, 24);
+        }
+    </style>
+</head>
+<body>
+  <div class="flex-container"> <!--parent element-->
+      <div class="flex-item" id="flex-item-1">1</div>
+      <div class="flex-item" id="flex-item-2">2</div>
+      <div class="flex-item" id="flex-item-3">3</div>
+      <div class="flex-item" id="flex-item-4">4</div>
+      <div class="flex-item" id="flex-item-5">5</div>
+      <div class="flex-item" id="flex-item-6">6</div>
+      <div class="flex-item" id="flex-item-7">7</div>
+      <div class="flex-item" id="flex-item-8">8</div>
+      <div class="flex-item" id="flex-item-9">9</div>
+      <div class="flex-item" id="flex-item-10">10</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting</title>
+    <style>
+        /* . we can set the following font properties of an element:
+ The font-family property is used to change the face of a font.
+ The font-style property is used to make a font italic or oblique.
+ The font-variant property is used to create a small-caps effect.
+ The font-weight property is used to increase or decrease how bold or 
+light a font appears.
+ The font-size property is used to increase or decrease the size of a font.
+ The font property is used as shorthand to specify a number of other font 
+properties.
+ */
+
+        /*
+        we can 
+set the following text properties of an element:
+
+ The color property is used to set the color of a text.
+
+ The direction property is used to set the text direction.
+
+ The letter-spacing property is used to add or subtract space between the 
+letters that make up a word.
+ The word-spacing property is used to add or subtract space between the 
+words of a sentence.
+ The text-indent property is used to indent the text of a paragraph.
+ The text-align property is used to align the text of a document.
+ The text-decoration property is used to underline, overline, and 
+strikethrough text.
+ The text-transform property is used to capitalize text or convert text to 
+uppercase or lowercase letters.
+ The white-space property is used to control the flow and formatting of 
+text.
+ The text-shadow property is used to set the text shadow around a text. */
+        h1{
+            color:turquoise ;
+            font-family: monospace;
+            font-weight: 900;
+            word-spacing: 3;
+            text-align: center;
+            text-decoration:overline;
+            text-transform: uppercase;
+            text-shadow:4px 3px 2px rgb(32, 32, 104);
+
+            /* font:italic small-caps bold 15px georgia; */
+        }
+        p{
+           text-indent: 80px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Lorem</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, labore.</p>
+    <pre>
+        style="white-space:pre;">This text has a line break
+and the white-space pre setting tells the browser to honor it
+just like the HTML pre tag.
+    </pre>
+</body>
+
+</html>

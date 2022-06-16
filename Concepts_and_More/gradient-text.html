@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Text</title>
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        .gradient-text{
+            font-size: 7rem;
+            position: absolute;
+           top: 40%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           background: -webkit-linear-gradient(20deg,red,blue);
+           background-clip:text ;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+
+        }
+        
+
+        @media all and (max-width:699px) and (min-width:120px) {
+   html {
+      font-size: 35%;
+
+
+
+
+   }
+}
+    </style>
+</head>
+<body>
+   <h1> <p class="gradient-text">Salman,in Gradient Text Looks Amazing</p></h1>
+</body>
+</html>

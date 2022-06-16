@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid Challenge</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 20px;
+        }
+
+        #items {
+            background-color: rgb(7, 136, 119);
+            /* border: 5px red solid;
+            border-radius: 10px; */
+            padding: 22px;
+            text-align: center;
+            font-size: 15px;
+            font-family:  Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+            color: wheat;
+          
+            
+           
+        }
+
+        .nested-item-1 {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 20px;
+
+        }
+
+        .nested-item-2 {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 20px;
+
+        }
+
+        .nested-item-3 {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 20px;
+
+        }
+
+        .nested-item-4 {
+            display: grid;
+            grid-template-rows: repeat(6,1fr);
+            row-gap: 20px;
+
+        }
+
+        .nested-item-5{
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            row-gap: 20px;
+
+        }
+        .text{
+           
+            background: -webkit-linear-gradient(20deg,red,blue);
+           background-clip:text ;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="items">1 </div>
+
+        <div class="nested-item-1">
+            <div id="items">2</div>
+            <div id="items">3</div>
+        </div>
+
+        <div class="nested-item-2">
+            <div id="items">4</div>
+            <div id="items">5<br><br> <br><br> <br> <br> <span class="text">
+                Grid <br> Challenge
+            </span></div>
+            <div id="items">6</div>
+
+        </div>
+
+        <div class="nested-item-3">
+            <div id="items">7</div>
+            <div id="items">8</div>
+            <div id="items">9</div>
+            <div id="items">10</div>
+</div>
+
+        <div class="nested-item-4">
+            <div id="items">11</div>
+            <div id="items">12</div>
+            <div id="items">13</div>
+            <div id="items">14</div>
+            <div id="items">15</div>
+            <div id="items">16</div>
+
+        </div>
+        
+        <div class="nested-item-5">
+            <div id="items">17</div>
+            <div id="items">18</div>
+            <div id="items">19</div>
+            <div id="items">20</div>
+            <div id="items">21</div>
+            <div id="items">22</div>
+            <div id="items">23</div>
+            <div id="items">24</div>
+            <div id="items">25</div>
+            <div id="items">26</div>
+            <div id="items">27</div>
+            <div id="items">28</div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

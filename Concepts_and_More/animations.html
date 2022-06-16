@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .circle {
+
+            width: 100px;
+            height: 100px;
+            color: wheat;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            padding: 30px;
+            font-weight: 900;
+            background-color: gray;
+            transition: width 3s, height 4s, border-radius 5s, background 6s;
+        }
+
+        .circle:hover {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: royalblue;
+
+        }
+
+        .bounce {
+            /* display: flex; */
+            /* float: right; */
+            position: relative;
+            top: 200px;
+            /* left:100px; */
+
+
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            cursor: pointer;
+            font-weight: 900;
+            background-color: thistle;
+            color: rgb(219, 1, 248);
+            padding: 1em 2em 1.1em;
+            letter-spacing: .3rem;
+            border-radius: 50%;
+
+            animation: bouncing 0.5s ease 0s infinite alternate both;
+        }
+
+        
+
+        @keyframes bouncing {
+            0% {
+                bottom: 0;
+                box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+            }
+
+            100% {
+                bottom: 50px;
+                box-shadow: 0 50px 50px rgba(0, 0, 0, .1);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">Hi,there 👻</div>
+
+    <div class="bounce"><a href="">Animation...</a></div>
+
+    
+
+
+
+</body>
+
+</html>

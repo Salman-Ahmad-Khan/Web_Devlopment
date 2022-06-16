@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <!-- HTML – FORMS:
+        HTML Forms are required, when you want to collect some data from the site visitor. For example,
+during user registration you would like to collect information such as name, email address, credit
+card, etc.
+A form will take input from the site visitor and then will post it to a back-end application such as
+CGI, ASP Script or PHP script etc. The back-end application will perform required processing on
+the passed data based on defined business logic inside the application.
+There are various form elements available like text fields, textarea fields, drop-down menus, radio
+buttons, checkboxes, etc. -->
+
+    <!-- The HTML <form> tag is used to create an HTML form and it has following syntax:
+ -->
+
+    <!-- <form action="Script URL" method="GET|POST">
+ form elements like input, textarea etc.
+</form> -->
+
+    <!-- HTML Form Controls
+There are different types of form controls that you can use to collect data using HTML
+form:
+ Text Input Controls
+ Checkboxes Controls
+ Radio Box Controls
+ Select Box Controls
+ File Select boxes
+ Hidden Controls
+ Clickable Buttons
+ Submit and Reset Button -->
+
+    <!-- Text Input Controls
+There are three types of text input used on forms:
+ Single-line text input controls - This control is used for items that require only
+one line of user input, such as search boxes or names. They are created using
+HTML <input> tag.
+ Password input controls - This is also a single-line text input but it masks the
+character as soon as a user enters it. They are also created using HTMl <input>
+tag.
+ Multi-line text input controls - This is used when the user is required to give
+details that may be longer than a single sentence. Multi-line input controls are
+created using HTML <textarea> tag.
+ -->
+
+    <form action="" method="">
+        First Name: <input type="text" name="name" id="" maxlength="10" value="Input your name" required> <br> <br>
+
+        Last Name: <input type="text" name="name" id="" required> <br> <br>
+
+        User ID: <input type="text" name="user_id" required> <br> <br>
+
+        Password: <input type="password" name="password" id="" maxlength="8" value="max length 8" required> <br> <br>
+
+        Description: <br> <textarea name="msg" id="" cols="50" rows="5" maxlength="100"></textarea> <br> <br>
+
+        <!-- Checkbox Control
+Checkboxes are used when more than one option is required to be selected. They are also
+created using HTML <input> tag but type attribute is set to checkbox. -->
+        Checkbox Controls: &nbsp; &nbsp; &nbsp; &nbsp;<input type="checkbox">Maths
+        <input type="checkbox" name="" value="on">Physics
+        <input type="checkbox" name="" value="on">C++
+        <input type="checkbox" name="" value="on" checked>Python
+        <input type="checkbox" name="" value="on">Java
+        <input type="checkbox" name="" value="on">Others <br> <br>
+
+        <!-- Radio Button Control
+Radio buttons are used when out of many options, just one option is required to be
+selected. They are also created using HTML <input> tag but type attribute is set to radio.
+ -->
+        Radio Box Controls:
+        <input type="radio" name="" value="on">Physics
+        <input type="radio" name="" value="on" checked>C++
+        <input type="radio" name="" value="on">Python
+        <input type="radio" name="" value="on">Java
+        <input type="radio" name="" value="on" required>Others<br> <br>
+
+        <!-- Select Box Control
+A select box, also called drop down box which provides option to list down various options
+in the form of drop down list, from where a user can select one or more options. -->
+        Select Box Control:
+
+        <select name="drop-down" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="" selected>5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+        </select> <br> <br>
+
+        Select:
+        <select name="" id="">
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+            <option value=""> Python</option>
+        </select>
+        <br> <br>
+
+
+        <!-- File Upload Box
+If you want to allow a user to upload a file to your web site, you will need to use a file
+upload box, also known as a file select box. This is also created using the <input> element
+but type attribute is set to file. -->
+
+        File Upload Box: <input type="file" name="file" id="" accept="images/video/*" required> <br> <br>
+
+
+        <!-- Button Controls
+There are various ways in HTML to create clickable buttons. You can also create a clickable
+button using <input> tag by setting its type attribute to button. The type attribute can
+take the following values: -->
+
+        <input type="submit" name="" id="" value="Submit">
+        <input type="reset" name="" id="" value="Reset">
+        <input type="button" name="" id="" value="OK I Agree">
+        <input type="image" name="" id="" src="../images/aston-martin-dbs-superleggera-195.jpg">
+
+        <br> <br>
+        <!-- Hidden Form Controls
+Hidden form controls are used to hide data inside the page which later on can be pushed
+to the server. This control hides inside the code and does not appear on the actual page.
+For example, following hidden form is being used to keep current page number. When a
+user will click next page then the value of hidden control will be sent to the web server
+and there it will decide which page will be displayed next based on the passed current
+page. -->
+        <p>This is page 10</p> 
+        <input type="hidden" name="pagename" value="10" />
+        <input type="submit" name="submit" value="Submit" />
+        <input type="reset" name="reset" value="Reset" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body {
+    font-size: 17px;
+    margin: 15px 30px;
+    padding: 10px;
+    background: #121FCF;
+    background: -webkit-linear-gradient(to top, #121FCF 0%, #CF1512 100%);
+    background: -moz-linear-gradient(to top, #121FCF 0%, #CF1512 100%);
+    background: linear-gradient(to top, #121FCF 0%, #CF1512 100%);
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select,
+textarea {
+    width: 30%;
+    padding: 5px;
+    /* background-color: yellow; */
+    /* border: 1px  ;
+    border-radius: 12px; */
+
+     /* border-radius: 100px 100px 100px 100px / 100px 0px 100px 0px;
+    border: 0px solid #7C8073; */
+
+     border-radius: 10px 20px 40px 5px;
+}
+
+input[type="submit"] {
+
+
+    /* padding: 12px 20px;
+
+    border-radius: 20px;
+    cursor: pointer;
+    width: 60%;
+    background: #00FF00;
+    background: -webkit-linear-gradient(to left, #00FF00 0%, #00FFFF 100%);
+    background: -moz-linear-gradient(to left, #00FF00 0%, #00FFFF 100%);
+    background: linear-gradient(to left, #00FF00 0%, #00FFFF 100%); */
+
+    
+        font-family: verdana;
+        color: #f31aa0 !important;
+        font-size: 15px;
+        text-shadow: 0px 1px 1px #7CACDE;
+        box-shadow: 0px 1px 1px #BEE2F9;
+        padding: 9px 25px;
+        border-radius: 15px;
+        border: 2px solid #3866A3;
+        background: #63B8EE;
+        background: linear-gradient(to top, #63B8EE, #468CCF);
+      
+      
+
+
+
+}
+
+input[type="submit"]:hover {
+    
+
+    background: linear-gradient(to right, #0cbaba 50%, #380036, darksalmon);
+}

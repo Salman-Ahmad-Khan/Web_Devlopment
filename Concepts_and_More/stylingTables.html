@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling tables</title>
+    <style>
+        table,th,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            border-spacing: 15px;
+        }
+        th{
+            color: rgb(255, 8, 0);
+            background-color: lightgray;
+        }
+        td{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<!--TABLES:
+  You can set the following properties of a table:
+1. The border-collapse specifies whether the browser should control the 
+appearance of the adjacent borders that touch each other or whether each 
+cell should maintain its style.
+2. The border-spacing specifies the width that should appear between table 
+cells.
+3. The caption-side captions are presented in the <caption> element. By 
+default, these are rendered above the table in the document. You use 
+the caption-side property to control the placement of the table caption.
+4. The empty-cells specifies whether the border should be shown if a cell is 
+empty.
+5. The table-layout allows browsers to speed up the layout of a table by 
+using the first width properties it comes across for the rest of a column 
+rather than having to load the whole table before rendering it.
+-->
+<body>
+    <table align="left" border="1" cellpadding="5%" bgcolor="">
+
+
+        <tr>
+            <th>Serial Number</th>
+            <th>Team</th>
+            <th>Country Code</th>
+            <th>Ranking</th>
+
+        </tr>
+
+
+        <tr>
+            <td>01</td>
+            <td>Turkey</td>
+            <td>&nbsp; &nbsp;E2LK6</td>
+            <td> &nbsp; &nbsp;1</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Saudi</td>
+            <td>&nbsp; &nbsp;S7XK8</td>
+            <td> &nbsp; &nbsp;2</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Malaysia</td>
+            <td>&nbsp; &nbsp;Y2AT6</td>
+            <td> &nbsp; &nbsp;3</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Sudan</td>
+            <td>&nbsp; &nbsp;D2UK9</td>
+            <td> &nbsp; &nbsp;4</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>South Africa</td>
+            <td>&nbsp; &nbsp;F5LG9</td>
+            <td> &nbsp; &nbsp;5</td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td>Australia</td>
+            <td>&nbsp; &nbsp;T2LR1</td>
+            <td> &nbsp; &nbsp;6</td>
+        </tr>
+
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Most Valued Country(MVC)</td>
+                <td colspan="2">&nbsp; &nbsp;&nbsp; &nbsp;Turkey</td>
+
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
