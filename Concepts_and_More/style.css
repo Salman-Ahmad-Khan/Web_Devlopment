@@ -6,6 +6,9 @@ table,tr,th,td{
     padding: 10px;
     border-spacing:10px;
 }
+thead {
+    background: #F2F3F5 !important;
+}
 th{
     background-color: brown;
 }

@@ -6,21 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Table Tag</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border-collapse: collapse;
+        }
+    
+        thead {
+            background: #D0D1D2;
+        }
+    </style>
 </head>
 
 <body>
     <!-- The HTML <table> tag is used for defining a table. The table tag contains other tags that
 define the structure of the table.
+Common HTML Table tags
+
+tr> - represents rows
+<td> - used to create data cells
+<th> - used to add table headings
+    <caption> - used to insert captions
+    <thead> - adds a separate header to the table
+    <tbody> - shows the main body of the table
+    <tfoot> - creates a separate footer for the table
  -->
  <!-- table 01 -->
     <table align="left" border="1" cellpadding="5%" bgcolor="">
 
 
         <tr>
+        <thead>
             <th>Serial Number</th>
             <th>Team</th>
             <th>Country Code</th>
             <th>Ranking</th>
+        </thead>
 
         </tr>
 
@@ -75,9 +98,11 @@ define the structure of the table.
 <!-- table 02 -->
     <table align="center" border="1" cellpadding="5%">
         <tr>
-            <th>Subject</th>
+            <thead>
+                <th>Subject</th>
             <th>Topic</th>
             <th>Delivery</th>
+            </thead>
         </tr>
         <tr>
             <td>Java</td>
@@ -104,17 +129,25 @@ define the structure of the table.
     <br> <br> <br> <br> <br> <br><br> <br>
 
 
-    <h3>Browser Support</h3>
+    <!-- How to Add a Caption to a Table
+                                                                                                                                                                                                                                                    The main use of adding a caption to table is to provide a description about the data represented in the table. The caption can either be placed at the top of the table or the bottom and by default it will always be centered.
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    To insert a caption into a table, use the <caption> tag. -->
     <!-- table 03 -->
-    <table border="1" cellpadding="5%">
+    <table border="1" cellpadding="5%" border-collapse="collapse">
+        <span>
+            <caption>Browser Support</caption>
+        </span>
         <tr>
-            <th>Chrome</th>
+            <thead>
+                <th>Chrome</th>
             <th>Firefox</th>
             <th>Internet Explorer</th>
             <th>Opera</th>
             <th>Safari</th>
             <th>Andriod</th>
             <th>Microsoft Edge</th>
+            </thead>
         </tr>
         <tr>
             <td>Yes</td>
@@ -125,6 +158,178 @@ define the structure of the table.
             <td>Yes</td>
             <td>Yes</td>
         </tr>
+    </table>
+    <br> <br><br> <br>
+    <!-- table 04 -->
+    <table border="1" cellpadding="10%">
+        <caption>Free Coding Resources</caption>
+        <thead>
+            <tr>
+                <th>Sites</th>
+                <th>Youtube Channel</th>
+                <th>Mobile Apps</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Freecode camp</td>
+            <td>Freecode camp</td>
+            <td>Enki</td>
+        </tr>
+        <tr>
+            <td>W3School</td>
+            <td>Academind</td>
+            <td>Programming Hero</td>
+        </tr>
+        <tr>
+            <td>Khan Academy</td>
+            <td>The Train Code</td>
+            <td>Solo Learn</td>
+        </tr>
+    </table>
+    <br> <br><br> <br>
+    <!-- table 05 -->
+    <table border="1" cellpadding="5%">
+        <tr>
+            <th></th>
+            <th colspan="">Semester</th>
+            <th colspan="">Grade</th>
+        </tr>
+    
+        <tr>
+            <td>1</td>
+            <td>Jan - April</td>
+            <td>Credit</td>
+        </tr>
+    
+        <tr>
+            <td>2</td>
+            <td>May - August</td>
+            <td>Pass</td>
+        </tr>
+    
+        <tr>
+            <td>2</td>
+            <td>September - December</td>
+            <td>Distinction</td>
+        </tr>
+    </table>
+    
+    <br> <br><br> <br>
+    <!-- table 05 -->
+    <table border="1" cellpadding="5%">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m</td>
+                <td rowspan="2">5:00 p.m</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Tuesday</td>
+                <td>8:00 a.m</td>
+                <td>11:00 a.m</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td rowspan="2">11:00 a.m</td>
+                <td rowspan="2">2:00 p.m</td>
+            </tr>
+            <tr>
+                <td rowspan="2">XSL transformation</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m</td>
+                <td>5:00 p.m</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m</td>
+                <td>12:00 p.m</td>
+                <td>XLS Formatting Objects</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m</td>
+                <td rowspan="2">5:00 p.m</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Tuesday</td>
+                <td>8:00 a.m</td>
+                <td>11:00 a.m</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td rowspan="2">11:00 a.m</td>
+                <td rowspan="2">2:00 p.m</td>
+            </tr>
+            <tr>
+                <td rowspan="2">XSL transformation</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m</td>
+                <td>5:00 p.m</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m</td>
+                <td>12:00 p.m</td>
+                <td>XLS Formatting Objects</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m</td>
+                <td rowspan="2">5:00 p.m</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Tuesday</td>
+                <td>8:00 a.m</td>
+                <td>11:00 a.m</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td rowspan="2">11:00 a.m</td>
+                <td rowspan="2">2:00 p.m</td>
+            </tr>
+            <tr>
+                <td rowspan="2">XSL transformation</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m</td>
+                <td>5:00 p.m</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m</td>
+                <td>12:00 p.m</td>
+                <td>XLS Formatting Objects</td>
+            </tr>
+    
+        </tbody>
     </table>
 </body>
 
