@@ -1,4 +1,4 @@
-##HTML & CSS
+###HTML & CSS
 #Code repository for HTML & CSS 
 
 HTML is the language in which most websites are written. HTML is used to create pages and make them functional.
@@ -22,7 +22,7 @@ Attributes contain additional pieces of information. Attributes take the form of
 
 An example of an attribute is:
 
-<img src="mydog.jpg" alt="A photo of my dog.">
+<img src="" alt="">
 
 In this instance, the image source (src) and the alt text (alt) are attributes of the <img> tag.
 
@@ -33,7 +33,7 @@ When using multiple tags, the tags must be closed in the order in which they wer
 <strong><em>This is really important!</em></strong>
 
 
-##Basic Construction of an HTML Page
+###Basic Construction of an HTML Page
 These tags should be placed underneath each other at the top of every HTML page that you create.
 
 <!DOCTYPE html> — This tag specifies the language you will write on the page. In this case, the language is HTML 5.
@@ -44,7 +44,7 @@ These tags should be placed underneath each other at the top of every HTML page 
 
 <body> — This is where the content of the page goes.
 
-##Further Tags
+###Further Tags
 Inside the <head> tag, there is one tag that is always included: <title>, but there are others that are just as important:
 
 <title>
@@ -53,7 +53,7 @@ This is where we insert the page name as it will appear at the top of the browse
 This is where information about the document is stored: character encoding, name (page context), description.
 
 
-##Let’s try out a basic <head> section:
+###Let’s try out a basic <head> section:
 
 <head>
 <title>My First Webpage</title>
