@@ -14,15 +14,13 @@ They work together but perform different functions.
 
 ## What Are HTML Tags?
 Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets.
-An example of a tag is: <h1>. Most tags must be opened <h1> and closed </h1> in order to function.
+
 
 
 What are HTML Attributes?
 Attributes contain additional pieces of information. Attributes take the form of an opening tag and additional info is placed inside.
 
-An example of an attribute is:
 
-<img src="" alt="">
 
 In this instance, the image source (src) and the alt text (alt) are attributes of the <img> tag.
 
