@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+   
+  <h1> A Git Guide for Beginners </h1>
+#beginners <br>
+#programming <br>
+#github <br>
+#devops <br> <br>
+In this article, I'll tell you about VCS (Version Control System), about Git itself, why you should learn it, and other cool stuff that even advanced users among you could not know. <br> <br>
+
+<h2>What is VCS?</h2>
+In a nutshell, Version Control System is a system that records changes to a file or a set of files over time and allows you to return later to a specific version of your project. It means that even if you or your co-worker made a mistake you can easily return to the latest version of your project and start from there again. It makes everything easier and gives you chances to experiment.<br> <br>
+
+<h3>Types of VCS</h3>
+Local (RCS) <br>
+Centralized (CVS, Subversion) <br>
+Distributed (Git, Mercurial, BitKeeper) <br> <br>
+Local <br>
+Local VCS deployed on one machine and works as a backup of a specific machine. Pictures or diffs (difference between two versions of your project) do not go beyond a certain computer. Just like you made a copy of the folder on your computer. <br>
+Local VCS Centralized <br>
+The centralized VCS is installed on a local server within the same network. And it can store snapshots or diffs from all computers from this network on the server. <br> <br>
+
+Centralized VCSDistributed <br>
+And distributed VCS is a vivid example of GitHub, when from anywhere in the world via the Internet you can store your versions in one cloud storage regardless of what network you are in or from what computer. Also, it allows copies to be moved not only from parent to storage and back but also between different parents. <br> <br>
+
+Distributed VCSAdvantages of GIT <br>
+Speed. <br>
+Simple design. <br>
+Strong support for non-linear development (thousands of parallel branches). <br>
+Fully distributed. <br>
+Able to handle large projects like the Linux kernel efficiently (speed and data size). <br> <br>
+<h3>Basic ideas</h3>
+Versions are snapshots, not diff. <br>
+Almost all operations are performed locally <br>
+Integrity. The SHA-1 hash is calculated for everything. <br>
+After adding data to the git, it is hard (but possible) to lose them. <br>
+Full git support is available only in the terminal. <br>
+All files can be in one of the following states - committed, modified, staged <br> <br>
+<h3>Differences Between Snapshots and Diffs</h3>
+SnapshotsDiffsEach project file in Git/Mercurial indexing process can have one of the three possible states: <br>
+modified, but not staged: This is when a project file is modified by the user, but Git/Mercurial has no track of the file changes at the moment. If the file is lost or removed unexpectedly, then Git cannot recover the file. <br>
+staged for commit to the repository: When a file is modified it can be added to the Git staging area to be later committed permanently to the repository. The staging area is a file, generally contained in the project's repository ( directory), that stores information about what will go into the next commit to the repository. The staging area is also sometimes referred to as the index. .git <br>
+committed to the repository: Once the staged files are committed to the repository, they become a permanent part of it and can be later extracted (checked out) for review or further development. <br>
+These three file states comprise an important integral part of Git and Mercurial. The following figure illustrates the three file states. <br> <br>
+
+<h3>Conclusion</h3>
+I tried to describe almost all aspects of VCS and GIT and why you should pay attention to them, the next part will be with the smaller features and I hope will be interesting.
+    
+</body>
+</html>

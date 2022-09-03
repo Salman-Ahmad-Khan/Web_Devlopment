@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+</head>
+
+<body>
+    <!--
+        While writing a program, there may be a situation when you need to adopt one 
+out of a given set of paths. In such cases, you need to use conditional 
+statements that allow your program to make correct decisions and perform right 
+actions.
+JavaScript supports conditional statements which are used to perform different 
+actions based on different conditions.
+JavaScript supports the following forms of if..else statement:
+ if statement
+ if...else statement
+ if...else if... statement 
+      -->
+
+    <script>
+        var age = 19;
+        //if else
+        if (age > 18) {
+            document.write("<b>Qualifies for driving <b>");
+        }
+        else {
+            document.write("<b>Does NOT qualify for driving <b>");
+        }
+
+        //nested if else,if else if
+        var linebreak = "<br>";
+        document.write(linebreak);
+        var book = "maths";
+        if (book == "history") {
+            document.write("<b>History book");
+        }
+        else if (book == "maths") {
+            document.write("<b> maths book");
+        }
+        else if (book == "economics") {
+            1
+            document.write("<b>Economics Book</b>");
+        } else {
+            document.write("<b>Unknown Book</b>");
+        }
+
+        var time = prompt("Input the time");
+        if (time > 5 && time < 12) {
+            alert("Good Morning 😶‍🌫️😶‍🌫️😶‍🌫️");
+
+        }
+        else if (time > 12 && time < 21) {
+            alert("Good Evening 😌😌😌");
+        }
+        else {
+            alert("Good Night 💞💕💕")
+        }
+
+    </script>
+</body>
+
+</html>

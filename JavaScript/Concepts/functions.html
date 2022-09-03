@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+
+    <script>
+        function sayHello() {
+            document.write("Hello there!");
+        }
+
+        function sayHello(name, age) {
+            document.write(name + " is " + age + " years old.");
+        }
+
+        function concatenate(first, last) {
+            var full = first + last;
+            return full;
+        }
+
+        function secondFunction() {
+            var result;
+            result = concatenate('Zara', 'Ali')
+            document.write(result);
+        }
+
+        //nested functions
+        function hypotenuse(a, b) {
+            function square(x) {
+                return x * x;
+            }
+            return Math.sqrt(square(a) + square(b));
+        }
+
+        function ansFunction() {
+            var ans = hypotenuse(3, 4);
+            document.write(ans);
+        }
+
+
+        function cookMaggi(maggi, pani, tapeli) {
+            document.write("your maggi will be ready in "
+                + maggi * 2
+                + " minutes "
+                + ' and Ingredients used are: '
+                + maggi + ' Maggi '
+                + pani + ' cups of water '
+                + " using " + tapeli
+                + " pan ")
+
+
+            console.log("your maggi will be ready in "
+                + maggi * 2
+                + " minutes "
+                + ' and Ingredients used are: '
+                + maggi + ' Maggi '
+                + pani + ' cups of water '
+                + " using " + tapeli
+                + " pan ")
+        }
+        cookMaggi(4, 8, 1);//calling maggi
+
+
+        /*
+        Function () Constructor
+The function statement is not the only way to define a new function; you can
+define your function dynamically using Function() constructor along with the
+new operator.
+*/
+        let func = new Function("x", "y", "return x*y");
+        function secondFun() {
+            var res = func(10, 20);
+            document.write("10*20= " + res);
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Functions in JavaScript</h1>
+    <!-- 
+        
+    FUNCTIONS:
+    A function is a group of reusable code which can be called anywhere in your
+program. This eliminates the need of writing the same code again and again. It
+helps programmers in writing modular codes. Functions allow a programmer to
+divide a big program into a number of small and manageable functions.
+   
+Function Definition
+Before we use a function, we need to define it. The most common way to define
+a function in JavaScript is by using the function keyword, followed by a unique
+function name, a list of parameters (that might be empty), and a statement
+block surrounded by curly braces.
+
+Syntax
+The basic syntax is shown here.
+<script type="text/javascript">
+
+function functionname(parameter-list)
+{
+ statements
+}
+
+</script>
+
+Function Parameters
+Till now, we have seen functions without parameters. But there is a facility to
+pass different parameters while calling a function. These passed parameters can
+be captured inside the function and any manipulation can be done over those
+parameters. A function can take multiple parameters separated by comma.
+
+Example
+Try the following example. We have modified our sayHello function here. Now it
+takes two parameters.
+
+
+The return Statement:
+A JavaScript function can have an optional return statement. This is required if
+you want to return a value from a function. This statement should be the last
+statement in a function.
+For example, you can pass two numbers in a function and then you can expect
+the function to return their multiplication in your calling program.
+Example
+Try the following example. It defines a function that takes two parameters and
+concatenates them before returning the resultant in the calling program
+
+
+Nested Functions:
+Prior to JavaScript 1.2, function definition was allowed only in top level global
+code, but JavaScript 1.2 allows function definitions to be nested within other
+functions as well. Still there is a restriction that function definitions may not
+appear within loops or conditionals. These restrictions on function definitions
+apply only to function declarations with the function statement.
+
+function literals (another feature
+introduced in JavaScript 1.2) may appear within any JavaScript expression,
+which means that they can appear within if and other statements.
+
+
+Function () Constructor:
+The function statement is not the only way to define a new function; you can
+define your function dynamically using Function() constructor along with the
+new operator.
+Note: Constructor is a terminology from Object Oriented Programming. You may
+not feel comfortable for the first time, which is OK.
+Syntax
+Following is the syntax to create a function using Function() constructor along
+with the new operator.
+<script type="text/javascript">
+
+var variablename = new Function(Arg1, Arg2..., "Function Body");
+
+</script>
+
+The Function() constructor expects any number of string arguments. The last
+argument is the body of the function – it can contain arbitrary JavaScript
+statements, separated from each other by semicolons.
+Notice that the Function() constructor is not passed any argument that
+specifies a name for the function it creates. The unnamed functions created
+with the Function() constructor are called anonymous functions.
+-->
+    <p>Click the following buttons to call the function</p>
+    <form>
+        <input type="button" onclick="sayHello()" value="Say hello">
+        <input type="button" onclick="sayHello('Zara',19)" value="Say hello">
+        <input type="button" onclick="secondFunction()" value="Call Function">
+        <input type="button" onclick="ansFunction()" value="Call Function">
+        <input type="button" onclick="cookMaggi(4,5,1)" value="cookMaggi">
+        <input type="button" onclick="secondFun()" value="call me">
+    </form>
+    <script src="makeSandwich.js"></script>
+</body>
+
+</html>

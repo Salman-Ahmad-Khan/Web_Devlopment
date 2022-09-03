@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00D4FF">
+    <title>Document</title>
+
+    <style>
+        #fade {
+            font-size: 2rem;
+
+        }
+
+        #fade {
+            transition: all 2s;
+
+        }
+
+        #fade.hide {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        #slide {
+            background: red;
+            color: white;
+            position: fixed;
+            bottom: 5px;
+            left: -999px;
+            transition: all 5s;
+            visibility: hidden;
+        }
+
+        #slide.show {
+            left: 5px;
+            visibility: visible;
+        }
+
+        #collapse {
+            width: 100%;
+            height: 200px;
+            transition: all 3s;
+        }
+
+        #collapse.hide {
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        /* .mask {
+            font-size: 7rem;
+            mask-image: url(C:\Users\Salman\htmlCSS\JavaScript\Concepts\photo-1499951360447-b19be8fe80f5.png);
+            mask-repeat: no-repeat;
+        } */
+        .button {
+
+            font-size: 16pt;
+
+            /*  padding-top: 18px;
+             padding-right: 32px;
+            padding-bottom: 18px; 
+              padding-left: 32px;*/
+            padding: 18px 32px 18px 32px;
+            border-radius: 5px;
+            border-color: grey;
+
+
+        }
+
+        .img1 {
+            margin: 3%;
+            position: relative;
+
+        }
+
+        h3 {
+            color: aliceblue;
+            text-shadow: darkgrey;
+
+        }
+
+        .txt1 {
+            position: absolute;
+            top: 17px;
+            left: 50px;
+        }
+
+        .txt2 {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+        }
+
+        .txt3 {
+            position: absolute;
+            bottom: 170px;
+            right: 20px;
+        }
+
+        span {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+
+        summary {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<!-- how to alert users before they leave the website -->
+
+<body onbeforeunload="return false">
+    <div id="fade">text</div>
+
+    <div id="slide">slide</div>
+
+    <div id="collapse">collapse</div>
+
+    <div class="mask">In
+        <img src="C:\Users\Salman\htmlCSS\JavaScript\Concepts\photo-1499951360447-b19be8fe80f5.png" alt="">
+    </div>
+
+    <div>
+        <input type="image"><br> <br>
+        select a color <input type="color" value="select a color"> <br> <br>
+        <input class="button" type="button" value="Get Started">
+    </div>
+
+    <br> <br>
+    <div class="img1">
+        <img src="../image/photo-1499951360447-b19be8fe80f5.png" alt="this is an image" width="700px">
+
+        <h3 class="txt1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, officia!</h3>
+        <h3 class="txt2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, officia!</h3>
+        <h3 class="txt3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, officia!</h3>
+
+
+    </div>
+
+    <span>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit alias non esse voluptatem. Ipsam harum quam
+        omnis exercitationem. Temporibus, sunt?
+    </span>
+    <br> <br>
+
+    <!-- <video controls poster="../../images/Hd_4k_desktop_wallpaper_photo5-551.jpg">
+        <source src="../../videos/KABHI ARSH PAR KABHI FARSH PAR _ MAULANA_TARIQ_JAMEEL _ NEW WHATSAPP STATUS _.mp4"
+            type="video/mp4">
+        <source src="../../videos/VID-20220307-WA0008.mp4" type="video/mp4">
+    </video> -->
+    <video src="./../videos/VID-20220307-WA0008.mp4" type="video/mp4" controls></video> <br><br>
+
+    <dialog open>
+        <p>dialog</p>
+    </dialog>
+    <br><br>
+
+    <details ondrop>
+        <summary>section 1 click to know more</summary>
+        <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quod itaque distinctio. Fugit vitae
+            magnam placeat ipsum pariatur. Autem, alias laudantium nesciunt aspernatur commodi in recusandae eum minima
+            expedita vel at cumque, repudiandae delectus asperiores dolorem quisquam? In sit obcaecati vel consequuntur
+            perspiciatis, et fugiat id, ipsum quam ipsam consectetur?</section>
+    </details>
+    <details open>
+        <summary>section 2
+
+        </summary>
+        <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, possimus? Quas accusantium,
+            distinctio, provident necessitatibus nobis quos aliquid corrupti numquam fuga dolore atque, natus adipisci
+            cum doloremque? Officiis, odit illum!</section>
+    </details>
+    <br><br>
+
+
+
+    <script>
+        document.getElementById(" fade").classList.toggle("hide");
+        document.getElementById("collapse").classList.toggle("hide"); </script>
+</body>
+
+</html>

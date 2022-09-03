@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <script>
+        /*
+        The for Loop:
+The ‘for’ loop is the most compact form of looping. It includes the following 
+three important parts:
+ The loop initialization where we initialize our counter to a starting 
+value. The initialization statement is executed before the loop begins.
+ The test statement which will test if a given condition is true or not. If 
+the condition is true, then the code given inside the loop will be executed,
+otherwise the control will come out of the loop.
+ The iteration statement where you can increase or decrease your 
+counter.
+You can put all the three parts in a single line separated by semicolons.
+*/
+        for (let i = 0; i < 10; i++) { document.write("Loops in JavaScript <br>"); }
+        for (let i = 0; i < 10; i++) {
+            console.log("Loops in JavaScript");
+        }
+
+        var count;
+        document.write("<br>starting for loop" + "<br>");
+        for (count = 0; count < 10; count++) {
+            document.write("current count: " + count);
+            document.write("<br>");
+        }
+        document.write("loop stopped");
+
+        //table of 5
+        for (var j = 5; j < 51; j = j + 5) {
+            console.log(j);
+        }
+        for (var k = 0; k < 11; k++) {
+            if (k % 2 == 0)
+                console.log(k);
+        }
+
+        /*
+        The while Loop:
+The most basic loop in JavaScript is the while loop which would be discussed in 
+this chapter. The purpose of a while loop is to execute a statement or code 
+block repeatedly as long as an expression is true. Once the expression 
+becomes false, the loop terminates.
+
+Syntax
+The syntax of while loop in JavaScript is as follows:
+while (expression)
+{
+ Statement(s) to be executed if expression is true
+}
+        */
+
+        count = 0;
+        document.write("<br>Starting  while Loop <br>");
+        while (count < 10) {
+            document.write("Current Count : " + count + "<br />");
+
+            count++;
+        }
+        document.write("Loop stopped!");
+
+
+        /*
+        The do while Loop
+The do...while loop is similar to the while loop except that the condition check 
+happens at the end of the loop. This means that the loop will always be executed 
+at least once, even if the condition is false.
+
+Syntax
+The syntax for do-while loop in JavaScript is as follows:
+do{
+ Statement(s) to be executed;
+} while (expression);
+Note: Don’t miss the semicolon used at the end of the do...while loop.
+
+        */
+        count = 0;
+        document.write("<br>Starting do while Loop" + "<br />");
+        do {
+            document.write("Current Count : " + count + "<br />");
+            console.log('Welcome');
+            count++;
+        } while (count < 5);
+        document.write("Loop stopped!");
+
+
+        /*
+        FOR-IN LOOP:
+        The for...in loop is used to loop through an object's properties. As we have not 
+discussed Objects yet, you may not feel comfortable with this loop. But once you 
+understand how objects behave in JavaScript, you will find this loop very useful.
+Syntax
+The syntax of ‘for..in’ loop is:
+for (variablename in object){
+ statement or block to execute
+}
+In each iteration, one property from object is assigned to variablename and 
+this loop continues till all the properties of the object are exhausted.*/
+
+
+        //for in loop
+        //Objects
+        var linebreak = "<br>";
+        document.write(linebreak);
+        let animal = {
+            name: "zebra",
+            leg: 4
+        };
+
+        for (let key in animal) {
+            document.write(key + " ", animal[key] + linebreak);
+            console.log(key, animal[key]);
+        }
+        //Try the following example to implement ‘for-in’ loop. It prints the web browser’s Navigator object.
+
+
+        document.write("<br><b>Navigator Object Properties<b/><br /> ");
+        for (var prop in navigator) {
+            document.write(prop);
+            document.write("<br>");
+            console.log('Navigator Object Properties');
+            console.log(prop);
+        }
+        document.write("Exiting from the loop!");
+        //arrays
+        let names = ["sansa", "arya", "snow", "ether"];
+        for (let index in names) {
+            console.log(index, names[index]);
+            document.write("<br>");
+            document.write(index, names[index]);
+        }
+
+        for (let name of names) {
+            console.log(name);
+            document.write("<br>");
+            document.write(name);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

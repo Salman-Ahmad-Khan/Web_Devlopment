@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH-CASE</title>
+</head>
+
+<body>
+
+    <!-- 
+        You can use multiple if...else…if statements, as in the previous chapter, to 
+perform a multiway branch. However, this is not always the best solution, 
+especially when all of the branches depend on the value of a single variable.
+
+switch statement handles 
+ more efficiently than repeated if...else 
+if statements.
+
+Syntax
+The objective of a switch statement is to give an expression to evaluate and 
+several different statements to execute based on the value of the expression. 
+The interpreter checks each case against the value of the expression until a 
+match is found. If nothing matches, a default condition will be used.
+switch (expression)
+{
+ case condition 1: statement(s)
+ break;
+ case condition 2: statement(s)
+ break;
+ ...
+ case condition n: statement(s)
+ break;
+ default: statement(s)
+}
+The break statements indicate the end of a particular case. If they were 
+omitted, the interpreter would continue executing each statement in each of the 
+following cases.
+
+     -->
+
+    <script>
+        let grade = 'A' || 'a';
+        document.write("Entering switch block<br>");
+        switch (grade) {
+            case 'A': document.write("Good job<br>");
+                break;
+            case 'B': document.write("Pretty good<br />");
+                break;
+            case 'C': document.write("Passed<br />");
+                break;
+            case 'D': document.write("Not so good<br />");
+                break;
+            case 'F': document.write("Failed<br />");
+                break;
+            default: document.write("Unknown grade<br />")
+        }
+        document.write("Exiting switch block");
+
+
+        let grad = prompt("Input yout grade letter in uppercase");
+
+        switch (grad) {
+            case 'A': alert("Good job");
+                break;
+            case 'B': alert("Pretty good");
+                break;
+            case 'C': alert("Passed"); C
+                break;
+            case 'D': alert("Not so good");
+                break;
+            case 'F': alert("Failed 😪😪😪");
+                break;
+            default: alert("Unknown grade")
+        }
+
+    </script>
+    <!-- Break statements play a major role in switch-case statements. Try the following 
+code that uses switch-case statement without any break statement.
+ -->
+    <script>
+        var grde = 'A';
+        document.write("<br />Entering switch block<br />");
+        switch (grde) {
+            case 'A': document.write("Good job<br />");
+            case 'B': document.write("Pretty good<br />");
+            case 'C': document.write("Passed<br />");
+            case 'D': document.write("Not so good<br />");
+            case 'F': document.write("Failed<br />");
+            default: document.write("Unknown grade<br />")
+        }
+        document.write("Exiting switch block");
+
+        var fruitType = prompt("konsi fal chahiye");
+        switch (fruitType) {
+            case 'narangi':
+                console.log('narangi h 60rs kilo');
+                break;
+            case 'sabe': A
+                console.log('sabe h 180rs kilo');
+                break;
+            case 'kele': B
+                console.log('kele h 85rs kilo');
+                break;
+            case 'aam':
+                console.log('aam h 250rs kilo');
+                break;
+            case 'papita':
+                console.log('papita h 310rs kilo');
+                break;
+            default:
+                //backticks
+                console.log(`${fruitType}, aaj khtm hogya kl aayega`);
+        }
+        console.log("oor kch chahiye hukum?");
+    </script>
+
+
+</body>
+
+</html>

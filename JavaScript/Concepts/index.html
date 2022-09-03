@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        h1 {
+            color: rgb(175, 175, 0);
+            text-align: center;
+        }
+
+        button {
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            text-align: center;
+
+            border: 2px solid rgb(255, 232, 28);
+            background: rgb(255, 232, 28);
+            color: rgb(4, 4, 177);
+            text-shadow: 1px 1px 1px rgb(3, 255, 99);
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <!-- <button>Javascript</button> -->
+    <button>Hi,there</button>
+
+    <script>
+        // document.write which writes a string into our HTML document. 
+        // document.write("Javascript")
+        // let btn = document.querySelector('button');
+        // btn.addEventListener('click', showMsg);
+
+        // function showMsg() {
+        //     alert("Welcome to Javascript");
+        // }
+
+        //taking input from the user
+        let btn = document.querySelector('button');
+        btn.addEventListener('click', inputMsg);
+
+        function inputMsg() {
+            let name = prompt('Please input your name.');
+            btn.textContent = 'Hey,There:' + name;
+
+        }
+    </script>
+</body>
+
+</html>

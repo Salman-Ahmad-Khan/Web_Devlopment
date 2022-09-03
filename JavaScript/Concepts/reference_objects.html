@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+
+<body>
+   <script>
+      /*
+      Objects
+      It is like any other variable, the only difference is that an object holds multiple values in terms of properties and methods. Properties can hold values of primitive data types and methods are functions.
+
+Objects are composed of attributes. If an attribute contains a function, it is
+considered to be a method of the object, otherwise the attribute is considered a
+property.
+
+Object Properties:
+Object properties can be any of the three primitive data types, or any of the
+abstract data types, such as another object. Object properties are usually
+variables that are used internally in the object's methods, but can also be
+globally visible variables that are used throughout the page.
+
+The syntax for adding a property to an object is:
+objectName.objectProperty = propertyValue;
+
+
+Object Methods
+Methods are the functions that let the object do something or let something be
+done to it. There is a small difference between a function and a method – at a
+function is a standalone unit of statements and a method is attached to an
+object and can be referenced by the "this" keyword.
+
+Methods are useful for everything from displaying the contents of the object to
+the screen to performing complex mathematical operations on a group of local
+properties and parameters.
+
+For example: Following is a simple example to show how to use the
+write() method of document object to write any content on the document.
+document.write ("This is test");
+
+
+User-Defined Objects
+All user-defined objects and built-in objects are descendants of an object called
+Object.
+
+The new Operator:
+The new operator is used to create an instance of an object. To create an
+object, the new operator is followed by the constructor method.
+In the following example, the constructor methods are Object(), Array(), and
+Date(). These constructors are built-in JavaScript functions.
+var employee = new Object();
+var books = new Array("C++", "Perl", "Java");
+var day = new Date("August 15, 1947");
+
+*/
+
+
+      let animal = {
+         name: "cow",
+         legs: 4,
+         eyes: 2,
+         tail: 1,
+         color: "white"
+      }
+
+      console.log(animal);
+      console.log(animal.color);
+      console.log(animal.eyes);
+      console.log(animal.name);
+      console.log(animal.tail);
+      console.log(animal["eyes"]);
+      console.log(animal["color"]);
+
+      /*
+      TheObject()Constructor:
+A constructor is a function that creates and initializes an object. JavaScript
+provides a special constructor function called Object() to build the object. The
+return value of the Object() constructor is assigned to a variable.
+
+The variable contains a reference to the new object. The properties assigned to
+the object are not variables and are not defined with the var keyword.
+*/
+      // let book = new Object(); //creates a new object
+
+      // book.subject = "Perl"; // Assign properties to the object
+      // book.author = "Mohtashim";
+      // document.write("Book name is : " + book.subject + "<br>");
+      // document.write("Book author is : " + book.author + "<br>");
+      // console.log("Book name is : " + book.subject + "<br>");
+      // console.log("Book author is : " + book.author + "<br>");
+
+      /*
+      This example demonstrates how to create an object with a User-Defined
+Function. Here 'this' keyword is used to refer to the object that has been passed
+to a function.
+*/
+      function book(title, author) {
+         this.title = title;
+         this.author = author;
+      }
+
+      var myBook = new book("Perl", "Mohtashim");
+      document.write("Book title is : " + myBook.title + "<br>");
+      document.write("Book author is : " + myBook.author + "<br>");
+
+
+      //Arrays
+      /*Arrays:
+      The Array object lets you store multiple values in a single variable. It stores a
+fixed-size sequential collection of elements of the same type. An array is used to
+store a collection of data, but it is often more useful to think of an array as a
+collection of variables of the same type.
+*/
+      //Syntax 
+      //Use the following syntax to create an Array Object.
+
+      let fruits = new Array("apple", "orange", "mango");
+      document.write(fruits);
+      console.log(fruits);
+
+      /*
+      we will use ordinal numbers to access and to set values inside an array as follows.
+fruits[0] is the first element
+fruits[1] is the second element
+fruits[2] is the third element
+
+*/
+      console.log(fruits[0]);
+      console.log(fruits[1]);
+      console.log(fruits[2]);
+      /*
+      The Array parameter is a list of strings or integers. When you specify a single
+numeric parameter with the Array constructor, you specify the initial length of
+the array. The maximum length allowed for an array is 4,294,967,295.
+*/
+
+      // we  can create array by simply assigning values as follows:
+      var fruit = ["apple", "orange", "mango"];
+      console.log(fruit);
+
+      var arr = new Array(10, 20, 30);
+      document.write("<br> arr.length is: " + arr.length); 
+   </script>
+</body>
+
+</html>

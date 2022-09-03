@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Datatypes</h1>
+    <!-- 
+        Case Sensitive
+
+• It matters whether an Identifier, such as a variable name, is uppercase or lowercase.
+
+ Example:
+area
+ARea
+AREA
+ArEa
+are all seen as different variables by the compiler.
+
+Statement
+var x, y, z;  // Declare Variables
+
+x = 5; y = 6;   // Assign Values
+
+z = x + y;   // Compute Values
+
+
+
+Comments
+Single line comment 
+//Declare Variables
+Multi-line comment
+/*
+This is just a comment This code can not be executed.
+*/
+
+
+###JavaScript is a Dynamically Typed Language
+
+Other Languages:Java,C++
+int number = 12;
+String name = "Aman";
+
+JavaScript
+var number = 12;
+var name = "Aman";
+
+
+
+
+###Boolean
+
+A JavaScript Boolean represents one of two values: true or false.
+
+var YES = true;
+
+var NO = false;
+
+if (YES)
+
+{
+
+alert("This code block will be executed");
+
+}
+
+if (NO)
+
+{
+
+}
+
+alert ("This code block will not be executed");
+
+
+
+Primitive
+###undefined
+A variable has an undefined value when no value is assigned before using it. So you can say that undefined means lack of value or unknown value.
+
+var myVar;
+alert(myVar);  // undefined
+
+
+Primitive
+###String
+A string is textual content. It must be enclosed in single or double quotation marks.
+
+var str1 = "Hello World";
+var str2 = 'Hello World';
+
+
+
+Primitive
+###null
+You can assign null to a variable to denote that currently that variable does not have any value but it will have later on. A null means absence of a value.
+
+var myVar = null;
+alert (myVar);  // null
+
+
+
+Primitive
+###Number
+Number type represents integer, float, hexadecimal, octal or exponential value.
+
+var int = 100;
+var float = 100.5;
+var hex = 0xfff;
+var exponential = 2.56e3;
+var octal = 030;
+
+
+
+User Defined
+####Object
+It is like any other variable, the only difference is that an object holds multiple values in terms of properties and methods. Properties can hold values of primitive data types and methods are functions.
+
+Variables,
+Function
+
+
+User Defined
+###Function
+A function allows you to define a block of code, give it a name and then execute it as many times as you want.
+
+canYouDoThisForMe();
+
+function canYouDoThisForMe ()
+ {
+      var yaSure = "I can do anything you want";
+       return yaSure;
+
+}
+
+
+###Variables
+A variable is a container for a value.
+
+Keywords to create variable
+let, const, var
+
+Ways to create a variable
+There are 3 ways to create variables in JavaScript:
+var, let and const. 
+
+Variables created with var are
+in scope of the function (or global if declared in the
+global scope);
+
+ let variables are block scoped;
+  and
+
+const variables are like let plus their values
+cannot be re-assigned.
+
+var a = "some value"; // functional or global scoped
+let b = "some value"; // block scoped
+const c = "some value"; // block scoped + cannot get new value
+
+
+-->
+
+    <script>
+        var yes = true;
+        var no = false;
+
+        // if (yes) {
+        //     alert("This code block will be executed");
+        // }
+        // if (no) {
+        //     alert("This code block will not be executed");
+        // }
+        var bool = true;
+        console.log(typeof bool);
+        var num = 546;
+        console.log(typeof num);
+        var num = "546";
+        console.log(typeof num);
+        var name = "Salman";
+        console.log(typeof name);
+        var nam = null;
+        console.log(typeof nam);
+        var undef;
+        console.log(typeof undef);
+        var large_int = 485469654852n;
+        console.log(typeof large_int);
+
+        let myname;
+        myname = "Salman Ahamd";
+        console.log(myname);
+        myname = "Ether";
+        console.log(myname);
+
+
+
+
+
+    </script>
+
+    <h2>Building a Payment Form</h2>
+    <script>
+        //naming conventions
+
+        //camel Case
+        let firstName = 'Salman';
+        console.log(firstName);
+
+        //pascal Case
+        let LastName = 'Khan';
+        console.log(LastName);
+
+        //snake Case
+        let middle_name = 'Ahamd';
+        console.log(middle_name);
+
+        //using constant (const Keyword)
+        const price = 9547;
+        console.log(price)
+
+        var courseName = 'Javascript'
+        console.log(courseName)
+
+        var isPaid = true
+        console.log(isPaid)
+
+        // takinginput from user
+        var modeOfPayment = prompt('Mode of Payment?')
+
+
+        // output to user
+        alert(firstName + " successfully bought " + courseName + " using " + modeOfPayment)
+
+    </script>
+</body>
+
+</html>
