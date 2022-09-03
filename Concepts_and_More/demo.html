@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo-html</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #D0D1D2;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        name: <input type="text" name="name" value="input your name" required maxlength="5">
+        password: <input type="password" value="type password" required>
+        Description: <textarea name="" id="" cols="30" rows="10">Description</textarea> <br>
+
+        <input type="checkbox" value="">A
+        <input type="checkbox" value="">A
+        <input type="checkbox" value="">A
+        <input type="checkbox" value="">A
+        <input type="checkbox" value="">A
+        <input type="checkbox" value="">A
+        <input type="checkbox" value="">A
+        <input type="checkbox" value="" checked>A
+        <input type="checkbox" value="">A <br>
+
+
+        <input type="radio">N
+        <input type="radio">N
+        <input type="radio">N
+        <input type="radio">N
+        <input type="radio">N
+
+        <br>
+
+        <select name="drop-down" id="">
+            <option value="">Q</option>
+            <option value="">Q</option>
+            <option value="">Q</option>
+            <option value="">Q</option>
+            <option value="">Q</option>
+        </select>
+        <br>
+
+        <input type="submit" name="" id="" value="Submit">
+        <input type="reset" name="" id="" value="Reset">
+        <input type="button" name="" id="" value="OK I Agree">
+        <input type="image" name="" id="" src="../images/aston-martin-dbs-superleggera-195.jpg">
+
+        <br><br>
+        File Upload Box: <input type="file" name="file" id="" accept="images/video/*" required> <br> <br>
+
+    </form>
+
+    <h1>form tag page</h1>
+    <a href="tabletag.html" target="_blank">table</a>
+    <br>
+    <img src="../image/gitvsgithub.png" width="450" alt="this is an image">
+    <br>
+    <!-- <video src="../video/KABHI ARSH PAR KABHI FARSH PAR _ MAULANA_TARIQ_JAMEEL _ NEW WHATSAPP STATUS _.mp4" width="450"
+        autoplay controls muted poster="../image/gitvsgithub.png" loop></video> -->
+
+    <br>
+
+    <table border="1" cellpadding="30%">
+        <caption>
+            Table 1
+        </caption>
+        <tr>
+            <td bgcolor="green">green</td>
+            <td bgcolor="red">red</td>
+
+        </tr>
+
+    </table>
+    <br>
+
+    <table border="1" cellpadding="30%" align="center">
+        <caption>
+            Table 2
+        </caption>
+        <tr>
+            <td rowspan="2" bgcolor="silver">silver</td>
+            <td bgcolor="gold">gold</td>
+
+
+        </tr>
+        <tr>
+
+
+            <td bgcolor="brown">brown</td>
+
+        </tr>
+    </table>
+    <br>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m</td>
+                <td rowspan="2">11:00 a.m</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG
+
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br> <br><br>
+
+
+    <table border="1" cellpadding="5%">
+        <caption>Time Table Regular</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th colspan="3">Morning</th>
+                <th>Lunch</th>
+                <th colspan="4">After-noon</th>
+                <th colspan="3">Evening</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td>9.00am-10.00am</td>
+            <td>10.00am-11.00am</td>
+            <td>11.00-12.00pm</td>
+            <td>1.00-2.00pm</td>
+            <td>2.00pm-3.00pm</td>
+            <td>3.00pm-4.00pm</td>
+            <td>4.00pm-5.00pm</td>
+            <td>5.00pm-6.00pm</td>
+            <td>3.00pm-4.00pm</td>
+            <td>4.00pm-5.00pm</td>
+
+
+        </tr>
+
+        <tr>
+            <td rowspan="2">Work</td>
+            <td>Monday</td>
+            <td colspan="3">Development Meeting</td>
+            <td></td>
+            <td colspan="3">Client meeting</td>
+            <td>Commute</td>
+            <td colspan="3">Free</td>
+
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="3">In Office</td>
+            <td></td>
+            <td colspan="6">In Office</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Lecture</td>
+            <td>Wednesday</td>
+            <td colspan="3">CSC250</td>
+            <td></td>
+            <td colspan="6">Preparation</td>
+
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td colspan="3">MAM201</td>
+            <td></td>
+            <td colspan="3">Tutorials for MAM201</td>
+            <td colspan="3">Free</td>
+        </tr>
+        <tr>
+            <td>Research</td>
+            <td>Friday</td>
+            <td colspan="3">Research</td>
+            <td></td>
+            <td colspan="6">Research</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

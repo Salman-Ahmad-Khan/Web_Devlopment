@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,58 +11,80 @@
         <style>
         tag_name1,tag_name2...{
             property:value;
-        } -->
+        }
     </style>
     <style>
         p,h2{
             color:rgb(14, 119, 238)
         }
-    </style>
+    </style> -->
 
-    <!-- <link rel="stylesheet" href="Payment_form.css"> -->
+    <link rel="stylesheet" href="Payment_form.css">
 </head>
+
 <body>
-    <form action="">
-        <h1 style="color: red;font-style: oblique;" >Payment Form</h1>  <!--inline style(CSS):-<tagName style="property:value">-->
-        <h2>Contact Informaton</h2>
-        <hr>
-        <p>Name:* <input type="text" name="name" required></p>
-        <fieldset>
-            <legend>Gender</legend>
-            <p>Male* <input type="radio" name="gender" id="male" required> Female* <input type="radio" name="gender" id="female" required></p>
-        </fieldset>
-            <hr>
-            <p>Address: <textarea name="address" id="address" cols="10" rows="12" ></textarea></p>
-        
-            <hr>
-            <p>Email:* <input type="email" name="email" id="email" required></p>
-            <p>Pincode:* <input type="number" name="pincode" id="pincode" required></p>
-            <hr>
-            <h2>Payment Informatiom</h2>
+    <div class="body">
+        <form action="">
             <p>
-                Card Type:*
+            <h3>Payment Form</h3>
+             <br>
+              <i>Fields marked with <span style="color: red;">*</span> are required.</i> </p>
+            <!--inline style(CSS):-<tagName style="property:value">-->
+            <h4>User Informaton</h4>
+
+            <p>Name:<span style="color: red;">*</span> &nbsp;&nbsp; <input type="text" name="name" required
+                    placeholder="Salman"></p>
+            <fieldset style="border: none;">
+                <!-- <legend>Gender</legend> -->
+                Gender:<span style="color: red;">*</span> &nbsp;&nbsp;
+                Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender"
+                    id="female" required>
+            </fieldset>
+
+            <p>Address: <br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <textarea
+                    name="address" id="address" cols="40" rows="5" placeholder="Enter your address"></textarea></p>
+
+
+            <p>Email:<span style="color: red;">*</span> &nbsp;&nbsp; <input type="email" name="email" id="email"
+                    required placeholder="you@example.com"></p>
+            <p>Pincode:<span style="color: red;">*</span> &nbsp;&nbsp; <input type="number" name="pincode" id="pincode"
+                    required placeholder="12345"></p>
+
+            <h4>Payment Informatiom</h4>
+            <p>
+                Card Type:<span style="color: red;">*</span> &nbsp;&nbsp;
                 <select name="card type" id="card type" required>
                     <option value="">--Select a Crad Type--</option>
                     <option value="Visa">Visa</option>
                     <option value="Debit Card">Debit Card</option>
                     <option value="Credit Card">Credit Card</option>
                     <option value="Master Card">Master Card</option>
-                    
+
                 </select>
             </p>
             <p>
-                Card Number:* <input type="number" name="card number" id="card number" required>
+                Card Number:<span style="color: red;">*</span> &nbsp;&nbsp; <input type="number" name="card number"
+                    id="card number" placeholder="1111-2222-3333-4444" required>
             </p>
-            <hr>
 
-        
-        <p> Expiration Date:* <input type="date" name="exp_date" id="exp-date" required></p>
-        <hr>
-        <p>CVV:* <input type="password" name="cvv" id="cvv" required></p>
-        <hr>
-        <input type="submit" value="Save">
-        <input type="submit" value="Pay Now">
 
-    </form>
+
+            <p> Expiration Date: <span style="color: red;">*</span>&nbsp;&nbsp; <input type="date" name="exp_date"
+                    id="exp-date" required></p>
+
+                    <!-- <p>Time: <input type="time"></p> -->
+
+            <p>CVV:<span style="color: red;">*</span> &nbsp;&nbsp; <input type="password" name="cvv" id="cvv" required
+                    placeholder="123"></p>
+
+
+            <input class="btn" type="submit" value="Save">
+            <input class="btn" type="reset" value="Reset">
+            <input class="btn" type="submit" value="Submit Order">
+
+
+        </form>
+    </div>
 </body>
+
 </html>

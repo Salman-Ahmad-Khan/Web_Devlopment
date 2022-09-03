@@ -3,9 +3,16 @@ body {
     margin: 15px 30px;
     padding: 10px;
     background: #121FCF;
-    background: -webkit-linear-gradient(to top, #121FCF 0%, #CF1512 100%);
+    background: -webkit-linear-gradient(to top, #2028a265 0%, #CF1512 100%);
     background: -moz-linear-gradient(to top, #121FCF 0%, #CF1512 100%);
-    background: linear-gradient(to top, #121FCF 0%, #CF1512 100%);
+    background: linear-gradient(to bottom, #cfcc12 0%, #CF1512 100%);
+    }
+
+    .whole {
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+        background: #000a14;
 }
 
 
@@ -43,15 +50,15 @@ input[type="submit"] {
 
     
         font-family: verdana;
-        color: #f31aa0 !important;
+        color: #000000 !important;
         font-size: 15px;
-        text-shadow: 0px 1px 1px #7CACDE;
-        box-shadow: 0px 1px 1px #BEE2F9;
+        text-shadow: 0px 1px 1px #02644f;
+        box-shadow: 0px 1px 1px #02644f;
         padding: 9px 25px;
         border-radius: 15px;
-        border: 2px solid #3866A3;
-        background: #63B8EE;
-        background: linear-gradient(to top, #63B8EE, #468CCF);
+        border: 2px solid #02644f;
+        background: #476d00;
+        background: linear-gradient(to top, #63B8EE, #8a30e4);
       
       
 
