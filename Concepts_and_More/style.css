@@ -13,7 +13,7 @@ th{
     background-color: brown;
 }
 td{
-    background-color: cadetblue;
+    background-color: rgb(246, 246, 246);
 }
 img{
  max-width: 100%;
@@ -21,6 +21,25 @@ img{
 footer{
     background: #73031b;
     padding: 15px 0;
-    color: #a64a3a;
+    color: #451515;
     font-size: 85%;
+}
+nav {
+    padding: 20px;
+    background-color: #451515;
+}
+
+nav a {
+    font-weight: 900;
+    font-size: 20px;
+    padding: 30px;
+    text-decoration: none;
+    color: wheat;
+}
+
+footer a {
+
+    padding: 10px;
+    text-decoration: none;
+    color: white;
 }
