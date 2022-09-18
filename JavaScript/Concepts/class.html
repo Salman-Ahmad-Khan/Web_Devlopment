@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>class</title>
+</head>
+
+<body>
+
+  <script>
+    class Product {
+      constructor(itemName, price, discount, productCode) {
+        this.itemName = itemName;
+        this.price = price;
+        this.discount = discount;
+        this.productCode = productCode;
+      }
+    }
+
+    let pencil = new Product("pencil", 20, 2.5, "NT-10");
+
+
+    const product1 = class Product {
+      constructor(itemName, price, discount, productCode) {
+        this.itemName = itemName;
+        this.price = price;
+        this.discount = discount;
+        this.productCode = productCode;
+      }
+
+      //getter and setter 
+      get getDiscountValue() {
+        return this.discount;
+      }
+
+      set setDiscountvalue(value) {
+        this.discount = value;
+      }
+
+      discountValue() {
+        return this.discount * this.price / 100;
+      }
+      get discountValue() {
+        return this.discount * this.price / 100;
+      }
+    }
+
+    let chair = new product1('chair', 499, 10.5, 'CH-01');
+
+
+
+    //extending a class
+    //parent class
+    class Car {
+      constructor(carName) {
+        console.log('passed by Supercar ,' + carName);
+        this.carName = carName;
+      }
+    }
+
+    //child class
+
+    class Supercar extends Car {
+      constructor(carName) {
+        super(carName);//calls the parent class constructor
+
+      }
+
+      getCarName() {
+        return this.carName + ' is a Supercar';
+      }
+    }
+
+    let car1 = new Car('audi');
+    let car2 = new Supercar('BMW');
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  
+        Arrays:
+        The Array object lets you store multiple values in a single variable. It stores a
+fixed-size sequential collection of elements of the same type. An array is used to
+store a collection of data, but it is often more useful to think of an array as a
+collection of variables of the same type.
+Syntax
+Use the following syntax to create an Array Object.
+var fruits = new Array( "apple", "orange", "mango" );
+
+The Array parameter is a list of strings or integers. When you specify a single
+numeric parameter with the Array constructor, you specify the initial length of
+the array. The maximum length allowed for an array is 4,294,967,295.
+
+You can create array by simply assigning values as follows:
+var fruits = [ "apple", "orange", "mango" ];
+
+     -->
+
+    <script>
+        let num = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        console.log(num);
+        console.log(num.length);
+
+        let numb = [1, 2, 3, 4, 5, 6];
+        console.log(numb);
+
+        //array methods
+        /*
+        push()
+         Adds one or more elements to the end of an
+array and returns the new length of the array
+*/
+
+        numb.push(548);
+        console.log(numb);
+        console.log(numb.push(41));
+        numb.push(45, 12);
+        console.log(numb);
+
+
+        /*
+        unshift()
+         Adds one or more elements to the front of an
+array and returns the new length of the array*/
+
+        numb.unshift(1000);
+        console.log(numb);
+        numb.unshift(4455, 101202);
+        console.log(numb);
+
+
+        /*
+        pop()
+         Removes the last element from an array and
+returns that element.
+*/
+
+        numb.pop();
+        console.log(numb);
+
+
+        /*
+        shift()
+         Removes the first element from an array and
+returns that element.
+*/
+
+        numb.shift();
+        console.log(numb);
+
+        /*
+        concat() 
+        Returns a new array comprised of this array
+joined with other array(s) and/or value(s).
+*/
+        console.log(num.concat(numb));
+
+        /*
+        concat using spread operator
+        */
+
+        let mix1 = [...num, ...numb];
+        console.log(mix1);
+
+        /*
+        slice()
+         Extracts a section of an array and returns a new
+array
+*/
+
+        let mix = num.concat(numb);
+        console.log(mix.slice(7, 11));
+
+
+        //loops
+        //for loop
+        for (let i = 0; i < mix.length; i++) {
+            console.log(mix[i]);
+        }
+        //for  of loop
+        for (let index of mix) {
+            console.log(index);
+        }
+
+        /*
+        join()
+         Joins all elements of an array into a string
+         
+         Syntax
+Its syntax is as follows:
+
+array.join(separator);
+
+Parameter Details
+separator : Specifies a string to separate each element of the array. If omitted,
+the array elements are separated with a comma.
+Return Value
+Returns a string after joining all the array elements.
+         */
+        var arr = new Array("First", "Second", "Third");
+        var str = arr.join();
+        document.write("str : " + str);
+        var str = arr.join("");
+        document.write("<br />str : " + str);
+        var str = arr.join(" + ");
+        document.write("<br />str : " + str);
+
+        let nam = ['S', 'a', 'l', 'm', 'a', 'n'];
+        var str1 = nam.join('');
+        document.write("<br />str : " + str1);
+
+    </script>
+
+</body>
+
+</html>

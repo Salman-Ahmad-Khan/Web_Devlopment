@@ -10,14 +10,15 @@
     <title>Animations</title>
     <style>
         .circle {
+            margin: 20px;
 
             width: 80px;
             height: 80px;
             color: wheat;
-            position: relative;
+            /* position: relative;
             top: 100px;
             left: 100px;
-            padding: 10px;
+            padding: 10px; */
             font-weight: 900;
             background-color: gray;
             transition: width 3s, height 4s, border-radius 5s, background 6s;
@@ -33,10 +34,10 @@
 
         .bounce {
             /* display: flex; */
-            /* float: right; */
-            position: relative;
+            float: left;
+            /* position: relative;
             top: 200px;
-            /* left:100px; */
+            left:100px; */
 
 
         }
@@ -53,6 +54,7 @@
             border-radius: 50%;
 
             animation: bouncing 0.5s ease 0s infinite alternate both;
+            
         }
 
         
@@ -69,13 +71,72 @@
             }
 
         }
+        .container{
+           
+            background-color: cadetblue;
+            width: 700px;
+            height: 100px;
+            position: relative;
+            top:300px ;
+            left: 5px;
+            
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: springgreen;
+
+            animation-name: sel;
+            animation-duration: 5s;
+            animation-iteration-count: infinite; 
+            /* animation-fill-mode:forwards; */
+            /* animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035); */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+            
+        }
+        @keyframes sel{
+            /* from{
+                width: 40px;
+                background-color: black;
+            }
+            to{
+               width:  800px;
+               background-color: violet;
+            } */
+
+            0% /*when animation is 0% completed*/
+            {
+                width: 40px;
+                background-color: black;
+            }
+            20% /*when animation is 20% completed*/
+            {
+                width:  200px;
+               background-color: rgb(255, 0, 255);
+            }
+            70% /*when animation is 70% completed*/
+            {
+                width:  400px;
+               background-color: rgb(173, 242, 12);
+            }
+            100% /*when animation is 100% completed*/
+            {
+                width:  800px;
+               background-color: rgb(6, 228, 253);
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="circle">Hi,there 👻</div>
 
-    <div class="bounce"><a href="">Animation...</a></div>
+    <div class="bounce"><a href="#next">Animation...</a></div>
+    
+    <div class="container">
+        <div id="next" class="box">This is a box</div>
+    </div>
 
     
 
